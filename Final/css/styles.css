@@ -1,0 +1,307 @@
+body{
+	background-color: rgb(240, 245, 252);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover; 
+	}
+
+.header{
+    height: 550px;
+    background-size: 1890px 850px;
+    background-repeat: space;
+    background-position: left top;
+    
+}
+#sta{
+	padding: 15px;
+	padding-right: 19px;
+	text-align: right;
+	font-size: 28px;
+}
+
+#nav1{	
+	z-index: 1000;
+	padding:0;
+	overflow: hidden;	
+	}
+	
+    #nav1 ul{
+	margin: 0;
+	padding: 0;
+    }
+    #nav1 ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+    }
+    
+    #nav1 ul li a{
+    display: block;
+    padding: .7rem;
+    text-decoration: none;
+    text-align: center;
+    font-size:1.1rem; 
+    font-family: 'Urbanist', sans-serif;
+    color: rgb(0, 0, 0);
+    transition: all .3s ease;
+		
+    }
+    #nav1 ul li a:hover{
+        background-color: rgba(255, 210, 7, 0.7);
+        color: rgba(255, 255, 255,1.0);
+    }
+	#nav1 ul li a.selected{
+		color: rgba(250, 253, 40, 0.8);
+		background-color: rgba(229, 255, 0, 0.5);
+	}
+    
+    article, footer{
+        width: auto;
+        justify-content: space-around;
+        padding: 0.5em 3em 0 3em;
+        }
+
+    h1{
+        font-size: 80px;
+        text-align: center;
+        font-family: 'Urbanist', sans-serif;
+        /* color: rgba(255, 205, 96, 0.616); 
+  		text-shadow: 1px 1px 2px rgba(255, 198, 9, 0.884), 0 0 25px rgb(56, 56, 56), 0 0 5px rgb(28, 36, 1);*/
+    }
+    h2{
+        font-size: 50px;
+        text-align: right;
+        font-family: 'Urbanist', sans-serif;
+        color: rgba(48, 32, 3, 0.89);
+        padding-right: 190px;
+    }
+    .pH{
+        text-align: left;
+        width: 800px;
+        padding-left: 800px;
+
+    }
+
+    h3{
+        font-size: 30px;
+        font-family: 'Urbanist', sans-serif;
+        padding: 0.5em 0 0.1em 1.5em;
+        color: rgba(48, 32, 3, 0.89);
+    }
+    p{
+        width: auto;
+        padding: 0 3em;
+        font-size: 25px;
+        font-family: 'Urbanist', sans-serif;
+        overflow: hidden;
+        color: rgba(48, 32, 3, 0.89);
+    }
+    .quote{
+        color: rgb(12, 9, 9);
+  		text-shadow: 1px 1px 2px rgb(247, 242, 242), 0 0 25px rgb(211, 200, 184), 0 0 5px rgb(235, 135, 6);
+    }
+    .list{
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        padding: 0 3em 2em 4.5em;
+        color: rgba(48, 32, 3, 0.89);
+    }
+    .s-image{
+        justify-content: center;
+        padding: 1.3em 3em;
+        background-color: rgba(250, 202, 112, 0.089);
+    }
+
+.flex_con{
+    display: flex;
+    height: auto;
+    border: 1px solid rgb(206, 143, 7);
+}
+
+.flex_item{
+    width: 500px;
+    margin: 10px;
+}
+
+.flex_item1 {
+    
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+.flex_item2 {
+    
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+.flex_con2{
+    display: flex;
+    border: 1px solid rgb(218, 150, 3);
+}
+
+.flex_item3 {
+    max-height: 600px;
+    flex: 2;
+}
+
+.flex_item4 {
+    max-height: 600px;
+    flex: 2;
+    background-color: rgba(107, 105, 86, 0.212);
+}
+.quote {
+    font-size: 50px;
+    text-align: center;
+}
+
+#col1, #col2{
+    padding: 30px;
+    width: auto;
+}
+
+
+footer{
+    text-align: center;
+	background-color:rgba(0, 0, 0, 0.212); 
+	color:rgb(0, 0, 0);
+    font-family: 'Urbanist', sans-serif;
+    }
+.responsive{
+	max-width: 100%;
+	height: auto;
+	}
+
+@media screen and (min-width:761px){
+	#nav1 ul{
+		display: flex;
+		height: 5px;
+		align-items: center;
+	}
+
+	#nav1{
+		padding: 1em;
+		top: 0;
+        width: 1200px;
+        margin: auto;
+	}
+
+	#nav1 ul li a{
+		font-size: 1.3em;
+		padding: 0;
+        margin: 0;
+	}
+    .flex_con, .flex_con2{
+        height: auto;
+        width: 1300px;
+        padding: 2em ;
+        border: 1px solid rgb(218, 150, 3);
+        overflow: hidden;
+        margin: auto;
+    }
+    .flex_con2{
+        background-color: lightgray;
+    }
+    p{
+        width: auto;
+        padding: 0 2.2em 0 ;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+}
+@media screen and (max-width:760px){
+        .flex_con, .flex_con2{
+            display: flex;
+            width: auto;
+            flex-direction: column;
+            justify-items: center;
+        } 
+        .flex_item{
+            width: auto;
+            margin: 10px;
+        }
+        article, footer{
+            
+            justify-content: space-around;
+            padding: 0.2em;
+            }
+        h1{
+                font-size: 60px;
+            }
+        h2{
+                font-size: 35px;
+                
+            
+            }
+        h3{
+            padding:0;
+        }
+        p{
+            width: auto;
+            padding: 0 2.5em .5em 2.5em;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: hidden;
+            }
+        .quote {
+            font-size: 20px;
+            text-align: center;
+            }
+        .responsive{
+            max-width: 100%;
+            height: auto;
+            }
+            #col1, #col2{
+                padding: 15px;
+                width: 93%;
+            }
+        
+    }
+
+    body {
+        margin: 0;
+      }
+      
+      /* Style the header */
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        
+      }
+     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 22%;
+        
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 50%;
+        border: solid 3px yellow;
+        background-color: rgba(245, 245, 245, 0.349);
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+          width: 100%;
+        }
+      }
+
+
