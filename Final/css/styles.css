@@ -1,3 +1,4 @@
+/* base page settings*/
 body{
 	background-color: rgb(240, 245, 252);
     background-repeat: no-repeat;
@@ -9,22 +10,21 @@ body{
     height: 550px;
     background-size: 1890px 850px;
     background-repeat: space;
-    background-position: left initial;
+    background-position: left;
     
 }
-
-#col1, #col2{
+.col1, .col2{
     box-sizing: border-box;
     }
-#maincontent{
+.maincontent{
     width: 1200px;
     margin: auto;
-        background-color: #fff;
-        overflow: hidden;
-		line-height: 1.3rem;
+    background-color: #fff;
+    overflow: hidden;
+	line-height: 1.3rem;
     }
 
-/* navbar styling */
+/* navbar header styling */
 #nav1{	
 	z-index: 1000;
 	padding:0;
@@ -55,7 +55,7 @@ body{
     }
 
 #nav1 ul li a:hover{
-        background-color: rgba(233, 234, 252, 0.7);
+        background-color: rgba(178, 199, 179, 0.7);
         color: rgb(66, 66, 66);
     }
 
@@ -64,7 +64,7 @@ body{
 		background-color: rgba(229, 255, 0, 0.5);
 	}
 
-/* footer nav */
+/* nav bar2 @footer */
 #nav2{	
 	z-index: 1000;
 	padding:0;
@@ -149,18 +149,21 @@ h6{
 p{
         width: auto;
         line-height: 23px;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         overflow: hidden;
         color: rgba(48, 32, 3, 0.89);
     }
 .pcard{
-    width: 600px;
+    width: 800px;
+    font-size: 23px;
 }
 
 .pH{
     text-align: left;
+    font-size: 23px;
     width: 750px;
+    font-size: 16px;
     padding: 0em 0em 0em 0em;
     color: rgba(255, 255, 255, 0.89);
     }
@@ -172,6 +175,7 @@ p{
 
 .quote{
         color: rgb(12, 9, 9);
+        margin: auto;
     }
 
 
@@ -179,7 +183,6 @@ p{
 .flex_con{
     display: flex;
     height: auto;
-    /* border: 1px solid rgb(206, 143, 7);*/
 }
 
 .flex_item{
@@ -191,11 +194,9 @@ p{
     flex: 2;
 }
 
-
 .flex_con2{
     display: flex;
-    border: 1px solid rgb(218, 150, 3);
-    background-color: rgb(195, 210, 214);
+    background-color: rgb(227, 234, 236);
 }
 
 .flex_item3 {
@@ -206,7 +207,17 @@ p{
 .flex_item4 {
     max-height: 600px;
     flex: 2;
+}
+.flex_item5 {
+    max-height: 350px;
+    max-width: 350px;
+    flex: 2;
+}
 
+.flex_item6 {
+    max-height: 350px;
+    max-width: 350px;
+    flex: 2;
 }
 .card{
     padding: 1em;
@@ -228,93 +239,92 @@ footer{
 
 /* media queries screens for larger than 761px */
 @media screen and (min-width:761px){
-	#nav1 ul{
+/* Nav bar 1(header) min width*/
+#nav1 ul{
 		display: flex;
 		height: 5px;
 		align-items: center;
 	}
-
-	#nav1{
+#nav1{
 		padding: 1em;
 		top: 0;
         width: 1200px;
         margin: auto;
 	}
-
-	#nav1 ul li a{
+#nav1 ul li a{
 		font-size: 1.3em;
 		padding: 0;
         margin: 0;
 	}
-    #nav2 ul{
+/* Nav bar 2(footer) min width*/
+#nav2 ul{
 		display: flex;
 		height: 5px;
 		align-items: center;
 	}
-
-	#nav2{
+#nav2{
 		padding: 1em;
 		top: 0;
         width: 1200px;
         margin: auto;
 	}
-
-	#nav2 ul li a{
+#nav2 ul li a{
 		font-size: .8em;
 		padding: 0;
         margin: 0;
 	}
-    .flex_con, .flex_con2{
+.flex_con, .flex_con2{
         height: auto;
         width: 1200px;
         padding: 2em ;
         overflow: hidden;
         margin: auto;
     }
-    p{
+p{
         width: auto;
         padding: 0 2.2em 0 ;
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    #maincontent{
+.maincontent{
 		display: flex;
 		justify-content: space-between;
 	}
-    #col1, #col2{
+.col1, .col2{
         padding: 1em;
 		flex-basis: 47%;
 	}
-/* formating for in heading text*/
+/* formating for in heading text and header box*/
 .textheader{
-    margin: 0 35em 1em 45em;
+    margin: 0 35em 1em 50em;
     }  
-.pH{
-    width: 600px;
+.textheader{
+    background-color: rgba(245, 233, 233, 0.329);
+    padding: 1em 0 0 0;
+    width: 650px;
     }
+
 
 .quote {
     font-size: 20px;
     text-align: center;
     }
-    .pcard{
-        width: 600px;
+/* formating for testimonial cards*/
+.pcard{
+    width: 600px;
     }
-    .pH{
-        text-align: left;
-        width: 500px;
-        padding: 0em 0em 2em 2em;
-        color: rgba(255, 255, 255, 0.89);
-        }
-    .textheader{
-        background-color: rgba(245, 233, 233, 0.329);
-        padding: 1em 0 0 0;
-        width: 570px;
+.pH{
+    text-align: left;
+    font-size: 19px;
+    width: 500px;
+    padding: 0em 0em 2em 4em;
+    color: rgba(255, 255, 255, 0.89);
     }
 }
 
 /* media queries screens for smaller than 761px */
 @media screen and (max-width:760px){
+   /* Nav bar 2(footer) at max-media*/
     #nav2{	
         z-index: 1000;
         padding:0;
@@ -344,7 +354,7 @@ footer{
         color: rgb(0, 0, 0);
         transition: all .3s ease;	
         }
-
+/* Flex containers at max-media*/
     .flex_con, .flex_con2{
         display: flex;
         width: auto;
@@ -354,6 +364,19 @@ footer{
     .flex_item{
         width: auto;
         margin: 10px;
+        }
+        .flex_item5 {
+            max-height: auto;
+            max-width: 350px;
+            padding: 1em 1em 0 1em;
+            flex: 2;
+        }
+        
+        .flex_item6 {
+            max-height: 600px;
+            max-width: 350px;
+            padding: 0 1.5em;
+            flex: 2;
         }
     article, footer{
         justify-content: space-around;
@@ -381,8 +404,8 @@ footer{
         }
     p{
         width: 330px;
-        padding: 0 2.5em .5em 2.5em;
-        font-size: 14px;
+        padding: 0 2.5em .5em 1em;
+        font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         overflow: hidden;
         }
@@ -390,31 +413,35 @@ footer{
         font-size: 20px;
         text-align: center;
         }
+         /* formating for images*/
     .responsive{
         max-width: 100%;
         height: auto;
         }
-        .pcard{
+    /* formating for testimonial cards*/
+    .pcard{
             width: 310px;
         }
-        .pH{
+    .pH{
             text-align: left;
-            width: 330px;
-            padding: 0em 0em 0em 0em;
+            width: 280px;
+            padding: 0em 1em 0em 3em;
             color: rgba(0, 0, 0, 0.89);
             }
-        .textheader{
+        /* formating for textheader*/
+    .textheader{
             background-color: rgba(245, 233, 233, 0.705);
-            padding: 2em;
-            width: 335px;
+            padding: 1em 3em;
+            width: 300px;
         } 
-        #col1, #col2{
+        /* formating for columns and port cards*/
+    .col1, .col2{
             width: 350px;
             padding: 1em;
             flex-basis: 47%;
         }
-        .card{
-            width: auto;
+    .card{
+            width: 355px;
             padding: 1em;
             border: 1px solid rgb(218, 150, 3);
         }

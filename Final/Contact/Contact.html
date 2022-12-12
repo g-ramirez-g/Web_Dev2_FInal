@@ -11,7 +11,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&family=Playfair+Display:ital,wght@1,400;1,500&family=Urbanist:wght@100;700&display=swap" rel="stylesheet"> 
 <style>
    .header{
-	background-image: url(..//img/contact.jpeg);
+	background-image: url(..//img/contact_small.jpg);
     background-repeat: space;
     background-size: cover;
 }
@@ -35,7 +35,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #879287;
   color: white;
   padding: 15px 20px;
   margin: 8px 0;
@@ -45,7 +45,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #b4dbb4;
 }
 textarea {
   width: 97.2%;
@@ -79,7 +79,7 @@ textarea {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #a1a8a2;
   color: white;
   padding: 15px 20px;
   margin: 8px 0;
@@ -89,7 +89,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #c4c4c4;
 }
 textarea {
   width: 97.2%;
@@ -114,7 +114,7 @@ textarea {
 </head>
 
 <body>
-    <h1>Mission Page Real Estate</h1>
+  <h1><u>Mission Page Real Estate</u></h1>
     <nav id="nav1">
         <ul>
         <li><a href="..//Home/Home.html">Home</a></li>
@@ -128,7 +128,7 @@ textarea {
     <br>
     <br>
     <div class="header">
-      <div class="textheader"><h2>Contact</h2><p class="pH">Contact us so we can assist you with your next home buying and selling needs.</p></div>
+      <div class="textheader"><h2 style="color: rgb(90, 87, 87);">Contact</h2><p class="pH" style="color: rgb(90, 87, 87);">Contact us so we can assist you with your next home buying and selling needs.</p></div>
     </div>
 <article>
 <div class="quote">
@@ -136,29 +136,29 @@ textarea {
 </div>
 <div class="form">
     <form action="/action_page.php">
-        <label for="fname">Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
     
-        <label for="lname">Email</label>
-        <input type="text" id="lname" name="lastname" placeholder="Email">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email">
     
-        <label for="country">I am interested in</label>
-        <select id="country" name="country">
-          <option value="australia">Buying a Home</option>
-          <option value="canada">Selling a Home</option>
-          <option value="usa">Investment Property</option>
-          <option value="usa">General Information</option>
-          <option value="usa">Other</option>
+        <label for="interest">I am interested in</label>
+        <select id="interest" name="interest">
+          <option value="buying">Buying a Home</option>
+          <option value="selling">Selling a Home</option>
+          <option value="invest">Investment Property</option>
+          <option value="general">General Information</option>
+          <option value="other">Other</option>
         </select>
 
-        <label for="country">How would you like to be contacted?</label>
-        <select id="country" name="country">
+        <label for="contact">How would you like to be contacted?</label>
+        <select id="contact" name="type">
           <option value="email">Email</option>
           <option value="phone">Phone</option>
         </select>
 
-        <label for="details">Tell us alittle more</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="tell">Tell us alittle more</label>
+        <textarea id="dets" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
         <input type="submit" value="Submit">
       </form>
